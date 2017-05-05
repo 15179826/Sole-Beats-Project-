@@ -1,0 +1,95 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.testble.MainActivity" >
+
+
+    <TextView
+        android:text="Sole beats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/onOffSwitch"
+        android:layout_centerHorizontal="true"
+        android:textSize="36sp"
+        android:fontFamily="cursive"
+        android:textStyle="normal|bold" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/volume2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textView2"
+        android:max="100" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/kickList"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_below="@+id/volume1"
+        android:layout_above="@+id/volume2"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:text="Kick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginBottom="114dp"
+        android:layout_above="@+id/volume2"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp"
+        android:fontFamily="cursive"
+        android:textStyle="normal|bold" />
+
+    <Switch
+        android:text="Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:id="@+id/onOffSwitch"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Snare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_below="@+id/onOffSwitch"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:textSize="30sp"
+        android:fontFamily="cursive"
+        android:textStyle="normal|bold" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/volume1"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:max="100" />
+
+    <ListView
+        android:layout_height="match_parent"
+        android:id="@+id/snareList"
+        android:layout_above="@+id/volume1"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView3"
+        android:layout_width="200dp"
+        android:layout_alignStart="@+id/textView3" />
+
+</RelativeLayout >
